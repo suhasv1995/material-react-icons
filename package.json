@@ -1,0 +1,43 @@
+{
+  "name": "material-react-icons",
+  "version": "1.0.0",
+  "description": "Material Design SVG Icons for React with ZERO dependencies",
+  "main": "dist/index.js",
+  "scripts": {
+    "build":
+      "node_modules/babel-cli/bin/babel.js icons --out-dir dist && node_modules/babel-cli/bin/babel.js utils --out-dir dist/utils"
+  },
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhasv1995/material-react-icons.git"
+  },
+  "keywords": [
+    "React",
+    "Material",
+    "Material",
+    "Design",
+    "Material",
+    "UI",
+    "MUI",
+    "md",
+    "Svg"
+  ],
+  "author": "Suhas V <suhasv1995@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suhasv1995/material-react-icons/issues"
+  },
+  "homepage": "https://github.com/suhasv1995/material-react-icons#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "babel": {
+    "presets": ["env", "react"],
+    "plugins": ["transform-object-rest-spread"]
+  }
+}
