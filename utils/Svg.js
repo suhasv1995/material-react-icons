@@ -35,7 +35,7 @@ Svg.propTypes = {
 };
 
 Svg.defaultProps = {
-  color: '#000000'
+  color: 'inherit'
 };
 
 export default Svg;
