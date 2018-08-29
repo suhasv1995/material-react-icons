@@ -61,12 +61,13 @@ import { Add, Remove } from 'material-react-icons';
 
 ### Props
 
-| Prop             | Type                 | Required | Default              | Description                                                                                                                              |
-| ---------------- | :------------------: | :------: | :------------------: | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `color`          | _`string`_           | `false`  | `inherit`            | Color of the icon (Ex: '#000000', 'rgba(255, 255, 255, 1)', 'black'). Default being inherit, the icon will take the color of its parent. |
-| `className`      | _`string`_           | `false`  | -                    | Class Name for the `svg` component                                                                                                       |
-| `styles`         | _`object`_           | `false`  | `{}`                 | Inline Styles for the `svg` component                                                                                                    |
-| `viewBox`        | _`string`_           | `false`  | `0 0 24 24`          | View Box attribute to the `svg` tag, which is '0 0 24 24' for the icons                                                                  |
+| Prop        | Type       | Required | Default     | Description                                                                                                                              |
+| ----------- | :--------: | :------: | :---------: | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `color`     | _`string`_ | `false`  | `inherit`   | Color of the icon (Ex: '#000000', 'rgba(255, 255, 255, 1)', 'black'). Default being inherit, the icon will take the color of its parent. |
+| `className` | _`string`_ | `false`  | -           | Class Name for the `svg` component                                                                                                       |
+| `size`      | _`number`_ | `false`  | 24          | Font size of the icon                                                                                                                    |
+| `styles`    | _`object`_ | `false`  | `{}`        | Inline Styles for the `svg` component                                                                                                    |
+| `viewBox`   | _`string`_ | `false`  | `0 0 24 24` | View Box attribute to the `svg` tag, which is '0 0 24 24' for the icons                                                                  |
 
 Note: Any other prop passed will be spread on to the root element (`<svg />`).
 
@@ -78,8 +79,8 @@ Note: Any other prop passed will be spread on to the root element (`<svg />`).
     userSelect: 'none',
     width: '100%',
     fill: 'currentColor',
-    fontSize: '24px',
     height: '1em',
+    verticalAlign: 'middle',
     width: '1em'
   }
 ```
